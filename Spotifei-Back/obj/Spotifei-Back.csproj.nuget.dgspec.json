@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Say\\Desktop\\spotifei-back-end\\Spotifei-Back\\Spotifei-Back.csproj": {}
+    "D:\\Suzana\\Desktop\\VINICIUS\\Workplace\\Spotifei-Back\\Spotifei-Back\\Spotifei-Back.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Say\\Desktop\\spotifei-back-end\\Spotifei-Back\\Spotifei-Back.csproj": {
+    "D:\\Suzana\\Desktop\\VINICIUS\\Workplace\\Spotifei-Back\\Spotifei-Back\\Spotifei-Back.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Say\\Desktop\\spotifei-back-end\\Spotifei-Back\\Spotifei-Back.csproj",
+        "projectUniqueName": "D:\\Suzana\\Desktop\\VINICIUS\\Workplace\\Spotifei-Back\\Spotifei-Back\\Spotifei-Back.csproj",
         "projectName": "Spotifei-Back",
-        "projectPath": "C:\\Users\\Say\\Desktop\\spotifei-back-end\\Spotifei-Back\\Spotifei-Back.csproj",
-        "packagesPath": "C:\\Users\\Say\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Say\\Desktop\\spotifei-back-end\\Spotifei-Back\\obj\\",
+        "projectPath": "D:\\Suzana\\Desktop\\VINICIUS\\Workplace\\Spotifei-Back\\Spotifei-Back\\Spotifei-Back.csproj",
+        "packagesPath": "C:\\Users\\Suzana\\.nuget\\packages\\",
+        "outputPath": "D:\\Suzana\\Desktop\\VINICIUS\\Workplace\\Spotifei-Back\\Spotifei-Back\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Say\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Suzana\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
