@@ -1,17 +1,16 @@
 class MusicaController
 {
     static int id = 1;
-    public void Adicionar(string titulo,DateTime duracao,Album album)
+    public void Adicionar(string titulo,Artista artista)
     {
         MusicaDAO musicaDAO = new MusicaDAO();
         Musica musica = new Musica();
         musica.Titulo = titulo;
-        musica.Duracao = duracao;
         musica.DataPublicacao = DateTime.Now;
-        musica.Album = album;
+        musica.Artista = artista;
         musica.Id = id;
         id ++;
-        musicaDAO.Adicionar(musica);
+        musicaDAO.Cadastrar(musica);
     }
 
     public List<Musica> ListarMusicas()
