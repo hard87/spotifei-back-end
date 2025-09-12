@@ -5,7 +5,7 @@ class MusicaController
     {
         MusicaDAO musicaDAO = new MusicaDAO();
         Musica musica = new Musica();
-        musica.Titulo = titulo;
+        musica.Nome = titulo;
         musica.DataPublicacao = DateTime.Now;
         musica.Artista = artista;
         musica.Id = id;
