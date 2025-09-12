@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Spotifai_Back.DAL
+namespace Spotifei_Back.DAL
 {
     public class UsuarioDAO
     {
