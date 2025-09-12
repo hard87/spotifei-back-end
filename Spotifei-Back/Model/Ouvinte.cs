@@ -1,16 +1,12 @@
-class Artista : Usuario
+class Ouvinte : Usuario
 {
+
     public override void ReproduzirMusica()
     {
         throw new NotImplementedException();
     }
 
     public override void CurtirMusica()
-    {
-        throw new NotImplementedException();
-    }
-
-    public override void Logar()
     {
         throw new NotImplementedException();
     }
@@ -25,15 +21,9 @@ class Artista : Usuario
         throw new NotImplementedException();
     }
 
-    public void PublicarMusica()
+    public override void Logar()
     {
-
+        throw new NotImplementedException();
     }
 
-    public void PublicarAlbum()
-    {
-        
-    }
-    
-    
-} 
+}
