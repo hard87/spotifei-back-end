@@ -1,6 +1,6 @@
 abstract class Usuario
 {
-    public int Id{ get; set; }
+    public int Id { get; set; }
 
     public string Login { get; set; }
 

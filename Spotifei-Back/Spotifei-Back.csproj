@@ -6,6 +6,7 @@
     <RootNamespace>Spotifei_Back</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <UserSecretsId>97875d96-0546-41af-8dae-c0fac1f34921</UserSecretsId>
   </PropertyGroup>
 
 </Project>
