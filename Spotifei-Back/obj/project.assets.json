@@ -8,24 +8,26 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Suzana\\.nuget\\packages\\": {}
+    "C:\\Users\\Prog_Sis\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Suzana\\Desktop\\VINICIUS\\workplace2\\spotifei-back-end\\Spotifei-Back\\Spotifei-Back.csproj",
+      "projectUniqueName": "c:\\workplace02\\Spotifei-back2\\spotifei-back-end\\Spotifei-Back\\Spotifei-Back.csproj",
       "projectName": "Spotifei-Back",
-      "projectPath": "D:\\Suzana\\Desktop\\VINICIUS\\workplace2\\spotifei-back-end\\Spotifei-Back\\Spotifei-Back.csproj",
-      "packagesPath": "C:\\Users\\Suzana\\.nuget\\packages\\",
-      "outputPath": "D:\\Suzana\\Desktop\\VINICIUS\\workplace2\\spotifei-back-end\\Spotifei-Back\\obj\\",
+      "projectPath": "c:\\workplace02\\Spotifei-back2\\spotifei-back-end\\Spotifei-Back\\Spotifei-Back.csproj",
+      "packagesPath": "C:\\Users\\Prog_Sis\\.nuget\\packages\\",
+      "outputPath": "c:\\workplace02\\Spotifei-back2\\spotifei-back-end\\Spotifei-Back\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Suzana\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Prog_Sis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -44,7 +46,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net9.0": {
@@ -65,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

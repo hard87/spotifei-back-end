@@ -1,21 +1,26 @@
 using Spotifai_Back.DAL;
 class ArtistaController
 {
-    static int id;
-    public void Cadastrar(string senha, string login)
+    ArtistaDAO artistaDAO = new ArtistaDAO();
+    public void Cadastrar(Artista artista)
     {
-        ArtistaDAO artistaDAO = new ArtistaDAO();
-        Artista artista = new Artista();
-        artista.Login = login;
-        artista.Senha = senha;
-        artista.Id = id;
-        id++;
         artistaDAO.Adicionar(artista);
+    }
+    public void Remover(Artista artista)
+    {
+        // artistaDAO.Remover(artista);     futuramente trocar id por artista
+    }
+    public void Editar(Artista artista)
+    {
+        artistaDAO.Atualizar(artista);
     }
     public List<Artista> ListarArtistas()
     {
-        ArtistaDAO artistaDAO = new ArtistaDAO();
         List<Artista> artistas = artistaDAO.ObterTodos();
         return artistas;
+    }
+    public Artista ObterPorId(int id)
+    {
+        return artistaDAO.ObterPorId(id);
     }
 }
