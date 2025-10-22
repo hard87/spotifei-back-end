@@ -1,26 +1,30 @@
 using Spotifai_Back.DAL;
-class ArtistaController
+class ArtistaController : IController<Artista>
 {
     ArtistaDAO artistaDAO = new ArtistaDAO();
-    public void Cadastrar(Artista artista)
+
+    public void Adicionar(Artista objeto)
     {
-        artistaDAO.Adicionar(artista);
+        artistaDAO.Adicionar(objeto);
     }
-    public void Remover(Artista artista)
+
+    public void Editar(Artista objeto)
     {
-        // artistaDAO.Remover(artista);     futuramente trocar id por artista
+        artistaDAO.Atualizar(objeto);
     }
-    public void Editar(Artista artista)
+
+    public List<Artista> ListarTodos()
     {
-        artistaDAO.Atualizar(artista);
+        return artistaDAO.ObterTodos();
     }
-    public List<Artista> ListarArtistas()
-    {
-        List<Artista> artistas = artistaDAO.ObterTodos();
-        return artistas;
-    }
+
     public Artista ObterPorId(int id)
     {
         return artistaDAO.ObterPorId(id);
+    }
+
+    public void Remover(Artista objeto)
+    {
+        // artistaDAO.Remover(objeto);
     }
 }
