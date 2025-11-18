@@ -1,28 +1,39 @@
 using Spotifai_Back.DAL;
-class MusicaController : IController<Musica>
+class MusicaController //: iController<Musica>
 {
-    MusicaDAO musicaDAO = new MusicaDAO();
-    public Musica ObterPorId(int id)
+ private MusicaDAO musicaDAO = new MusicaDAO();
+    public Musica? ListarPorId(int id)
     {
-        return musicaDAO.ObterPorId(id);
+        Musica musica = dao.ListarPorId(id);
+
+        if (musica != null)
+        {
+            return musica;
+        }
+        else
+        {
+            return null;
+        }
     }
-    public void Adicionar(Musica objeto)
+      public void PostarMusica(Musica musica)
     {
-        musicaDAO.Adicionar(objeto);
+        
+        dao.Cadastrar(musica);
     }
 
-    public void Remover(Musica objeto)
+    public void ExcluirMusica(Musica musica)
     {
-        // musicaDAO.Remover(objeto);
+        dao.Excluir(musica);
     }
 
-    public void Editar(Musica objeto)
-    {
-        musicaDAO.Atualizar(objeto);
+    public void AtualizarMusica(Musica musica)
+    { 
+        dao.Atualizar(Musica);
     }
 
-    public List<Musica> ListarTodos()
+
+   public List<Musica> ListarMusicas()
     {
-        return musicaDAO.ObterTodos();
+        return new MusicaDAO().ListarTodos();
     }
 }

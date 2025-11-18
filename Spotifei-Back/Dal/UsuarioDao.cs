@@ -6,46 +6,39 @@ using System.Threading.Tasks;
 
 namespace Spotifai_Back.DAL
 {
-    public class UsuarioDAO
+    public class UsuarioDAO : IDAO<Usuario>
     {
-        private static List<Usuario> usuarios = new List<Usuario>();
-        private static int nextId = 1;
+       private SpotifeiContext contexto = new SpotifeiContext();
+        public void Cadastrar(Usuario usuario)
+    {
+        contexto.Usuarios.Add(usuario);
+        contexto.SaveChanges();
+    }
 
-        public void Adicionar(Usuario usuario)
-        {
-            if (usuario == null) throw new ArgumentNullException(nameof(usuario));
-            usuario.Id = nextId++;
-            usuarios.Add(usuario);
-        }
+          public List<Usuario> ListarTodos()
+    {
+        return contexto.Usuarios.ToList();
+    }
 
-        public List<Usuario> ObterTodos()
-        {
-            return new List<Usuario>(usuarios);
-        }
+       public Usuario ListarPorId(int id)
+    {
+        Usuario? usuario = null;
+        usuario = contexto.Usuarios.FirstOrDefault(
+            usuario => usuario.Id == id
+        );
+        return usuario;
+    }
 
-        public Usuario ObterPorId(int id)
-        {
-            return usuarios.FirstOrDefault(u => u.Id == id);
-        }
+        public void Atualizar(Usuario usuario)
+    {
+        contexto.Usuarios.Update(usuario);
+        contexto.SaveChanges();
+    }
 
-        public bool Atualizar(Usuario usuario)
-        {
-            if (usuario == null) return false;
-            var existing = ObterPorId(usuario.Id);
-            if (existing == null) return false;
-
-            existing.Login = usuario.Login;
-            existing.Senha = usuario.Senha;
-
-            return true;
-        }
-
-        public bool Remover(int id)
-        {
-            var usuario = ObterPorId(id);
-            if (usuario == null) return false;
-            usuarios.Remove(usuario);
-            return true;
-        }
+        public void Excluir(Usuario usuario)
+    {
+        contexto.Usuarios.Remove(usuario);
+        contexto.SaveChanges();
+    }
     }
 }

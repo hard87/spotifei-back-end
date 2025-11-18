@@ -6,47 +6,40 @@ using System.Threading.Tasks;
 
 namespace Spotifai_Back.DAL
 {
-    public class MusicaDAO
+    public class MusicaDAO : IDAO<Musica>
     {
-        private static List<Musica> musicas = new List<Musica>();
-        private static int nextId = 1;
+        private SpotifeiContext contexto = new SpotifeiContext();
 
-        public void Adicionar(Musica musica)
-        {
-            if (musica == null) throw new ArgumentNullException(nameof(musica));
-            musica.Id = nextId++;
-            musicas.Add(musica);
-        }
+         public void Cadastrar(Musica objeto)
+    {
+        contexto.Musicas.Add(objeto);
+        contexto.SaveChanges();
+    }
 
-        public List<Musica> ObterTodos()
-        {
-            return new List<Musica>(musicas);
-        }
+      public List<Musica> ListarTodos()
+    {
+        return contexto.Musicas.ToList();
+    }
 
-        public Musica ObterPorId(int id)
-        {
-            return musicas.FirstOrDefault(m => m.Id == id);
-        }
+        public Musica ListarPorId(int id)
+    {
+        Musica? musica = null;
+        musica = contexto.Musicas.FirstOrDefault(
+            musica => musica.Id == id
+        );
+        return feedback;
+    }
 
-        public bool Atualizar(Musica musica)
-        {
-            if (musica == null) return false;
-            var existing = ObterPorId(musica.Id);
-            if (existing == null) return false;
+        public void Atualizar(Musica objeto)
+    {
+        contexto.Musicas.Update(objeto);
+        contexto.SaveChanges();
+    }
 
-            existing.Nome = musica.Nome;
-            existing.DataPublicacao = musica.DataPublicacao;
-            existing.Artista = musica.Artista;
-
-            return true;
-        }
-
-        public bool Remover(int id)
-        {
-            var musica = ObterPorId(id);
-            if (musica == null) return false;
-            musicas.Remove(musica);
-            return true;
-        }
+        public void Excluir(Musica objeto)
+    {
+        contexto.Musicas.Remove(objeto);
+        contexto.SaveChanges();
+    }
     }
 }

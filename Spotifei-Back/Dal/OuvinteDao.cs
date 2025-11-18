@@ -9,44 +9,37 @@ namespace Spotifai_Back.DAL
 {
     public class OuvinteDAO
     {
-        private static List<Ouvinte> ouvintes = new List<Ouvinte>();
-        private static int nextId = 1;
+      private SpotifeiContext contexto = new SpotifeiContext();
 
-        public void Adicionar(Ouvinte ouvinte)
-        {
-            if (ouvinte == null) throw new ArgumentNullException(nameof(ouvinte));
-            ouvinte.Id = nextId++;
-            ouvintes.Add(ouvinte);
-        }
+       public void Cadastrar(Ouvinte ouvinte)
+    {
+        contexto.Ouvintes.Add(ouvinte);
+        contexto.SaveChanges();
+    }
 
-        public List<Ouvinte> ObterTodos()
-        {
-            return new List<Ouvinte>(ouvintes);
-        }
+        public List<Ouvinte> ListarTodos()
+    {
+        return contexto.Ouvintes.ToList();
+    }
+          public Ouvinte ListarPorId(int id)
+    {
+        Ouvinte? ouvinte = null;
+        ouvinte = contexto.Ouvintes.FirstOrDefault(
+            ouvinte => ouvinte.Id == id
+        );
+        return ouvinte;
+    }
 
-        public Ouvinte ObterPorId(int id)
-        {
-            return ouvintes.FirstOrDefault(o => o.Id == id);
-        }
+         public void Atualizar(Ouvinte ouvinte)
+    {
+        contexto.Ouvintes.Update(ouvinte);
+        contexto.SaveChanges();
+    }
 
-        public bool Atualizar(Ouvinte ouvinte)
-        {
-            if (ouvinte == null) return false;
-            var existing = ObterPorId(ouvinte.Id);
-            if (existing == null) return false;
-
-            existing.ReproduzirMusica = ouvinte.ReproduzirMusica;
-            existing.CurtirMusica = ouvinte.CurtirMusica;
-
-            return true;
-        }
-
-        public bool Remover(int id)
-        {
-            var ouvinte = ObterPorId(id);
-            if (ouvinte == null) return false;
-            ouvintes.Remove(ouvinte);
-            return true;
-        }
+ public void Excluir(Ouvinte ouvinte)
+    {
+        contexto.Ouvintes.Remove(ouvinte);
+        contexto.SaveChanges();
+    }
     }
 }
