@@ -1,5 +1,5 @@
 
-class OuvinteController : IController<Ouvinte>
+public class OuvinteController : IController<Ouvinte>
 {
     OuvinteDAO ouvinteDAO = new OuvinteDAO();
      public Ouvinte? ObterPorId(int id)

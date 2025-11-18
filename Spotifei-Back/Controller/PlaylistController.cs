@@ -1,5 +1,5 @@
 using Spotifai_Back.DAL;
-class PlaylistController : IController<Playlist>
+public class PlaylistController : IController<Playlist>
 {
     PlaylistDAO playlistDAO = new PlaylistDAO();
     public void Adicionar(Playlist objeto)

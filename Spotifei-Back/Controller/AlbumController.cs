@@ -1,5 +1,5 @@
 
-class AlbumController : IController <Album>
+public class AlbumController : IController <Album>
 {
     AlbumDAO albumDAO = new AlbumDAO();
     public Album ObterPorId(int id)

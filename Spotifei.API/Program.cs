@@ -18,12 +18,12 @@ musicaGroup.MapPost("", ([FromBody]Musica musica) =>
     new MusicaController().Adicionar(musica);
     return Results.Ok("musica adicionada com sucesso");
 });
-musicaGroup.MapPut("", ([FromBody]) => 
+musicaGroup.MapPut("", ([FromBody]Musica musica) => 
 {
     new MusicaController().Editar(musica);
     return Results.Ok("musica alterada com sucesso");
 });
-musicaGroup.MapDelete("", ([FromBody]) => 
+musicaGroup.MapDelete("", ([FromBody]Musica musica) => 
 {
     new MusicaController().Remover(musica);
     return Results.Ok("musica deletada com sucesso");
@@ -74,21 +74,21 @@ ouvinteGroup.MapDelete("", ([FromBody] Ouvinte ouvinte) =>
 artistaGroup.MapGet("", () => 
 {
     List<Artista> artistas = new ArtistaController().ListarTodos();
-    return Results(artistas);
+    return Results.Ok(artistas);
 });
 artistaGroup.MapPost("", ([FromBody] Artista artista) => 
 {
     new ArtistaController().Adicionar(artista);
     return Results.Ok("artista adicionado com sucesso");
 });
-artistatGroup.MapPut("", ([FromBody] Artista artista) => 
+artistaGroup.MapPut("", ([FromBody] Artista artista) => 
 {
     new ArtistaController().Editar(artista);
     return Results.Ok("artista alterado com sucesso");
 });
-artistatGroup.MapDelete("", ([FromBody] Artista artista) => 
+artistaGroup.MapDelete("", ([FromBody] Artista artista) => 
 {
-    new ArtistaController()Remover(artista);
+    new ArtistaController().Remover(artista);
     return Results.Ok("artista removido com sucesso");
 });
 

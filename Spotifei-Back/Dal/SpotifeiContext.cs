@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata; //baixar bibliotecas Microsoft.Ent
 
 class SpotifeiContext : DbContext
 {
-    string connection = "Server=localhost;Port=3306;Database=Spotifei;Uid=root;Pwd=;"; //ajustar senha dependendo da maquina
+    string connection = "Server=localhost;Port=3306;Database=Spotifei;Uid=root;Pwd=0123;"; //ajustar senha dependendo da maquina
     public DbSet<Playlist> Playlists {get; set; }
     public DbSet<Artista> Artistas {get; set;}
     public DbSet<Ouvinte> Ouvintes { get; set; }

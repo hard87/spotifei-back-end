@@ -1,5 +1,5 @@
 using Spotifai_Back.DAL;
-class ArtistaController : IController <Artista>
+public class ArtistaController : IController <Artista>
 {
     ArtistaDAO artistaDAO = new ArtistaDAO();
 

@@ -1,5 +1,5 @@
 using Spotifai_Back.DAL;
-class MusicaController //: iController<Musica>
+public class MusicaController //: iController<Musica>
 {
  private MusicaDAO musicaDAO = new MusicaDAO();
     public Musica? ListarPorId(int id)
