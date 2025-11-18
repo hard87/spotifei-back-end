@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Spotifei.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a63c7bc03c22036dcf6fe1e0bdf5b867c149beda")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+80c921112cd029e18a55181564110c5e0f605ce7")]
 [assembly: System.Reflection.AssemblyProductAttribute("Spotifei.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Spotifei.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

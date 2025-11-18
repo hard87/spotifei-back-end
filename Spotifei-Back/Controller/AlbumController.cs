@@ -1,28 +1,28 @@
-class AlbumController
+
+public class AlbumController : IController <Album>
 {
-    static int id = 1;
-    public void CriarAlbum(string nome,Artista artista)
+    AlbumDAO albumDAO = new AlbumDAO();
+    public Album ObterPorId(int id)
     {
-        AlbumDAO albumDAO = new AlbumDAO();
-        Album album = new Album();
-        album.Id = id;
-        id++;
-        album.Nome = nome;
-        album.DataCriacaao = DateTime.Now;
-        album.Artista = artista;
-        albumDAO.Cadastrar(album);
-        
+        return albumDAO.ListarPorId(id);
+    }
+    public void Adicionar(Album objeto)
+    {
+        albumDAO.Cadastrar(objeto);
     }
 
-    public void AdicionarMusicas(Musica musica,Album album)
+    public void Remover(Album objeto)
     {
-        album.Musicas.Add(musica);
-        album.NumeroMusicas = album.Musicas.Count;
+        albumDAO.Excluir(objeto);
     }
 
-    public List<Album> ListarAlbums()
+    public void Editar(Album objeto)
     {
-        AlbumDAO albumDAO = new AlbumDAO();
+        albumDAO.Atualizar(objeto);
+    }
+
+    public List<Album> ListarTodos()
+    {
         List<Album> albums = albumDAO.ListarTodos();
         return albums;
     }

@@ -1,4 +1,4 @@
-class Artista : Usuario
+public class Artista : Usuario
 {
     public override void ReproduzirMusica()
     {
