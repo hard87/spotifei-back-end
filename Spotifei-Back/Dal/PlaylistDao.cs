@@ -6,49 +6,39 @@ using System.Threading.Tasks;
 
 namespace Spotifai_Back.DAL
 {
-    public class PlaylistDAO
+    public class PlaylistDAO : IDAO<Playlist>
     {
-        private static List<Playlist> playlists = new List<Playlist>();
-        private static int nextId = 1;
+       private SpotifeiContext contexto = new SpotifeiContext();
+        public void Cadastrar(Playlist playlist)
+    {
+        contexto.Playlists.Add(playlist);
+        contexto.SaveChanges();
+    }
 
-        public void Adicionar(Playlist playlist)
-        {
-            if (playlist == null) throw new ArgumentNullException(nameof(playlist));
-            playlist.Id = nextId++;
-            playlists.Add(playlist);
-        }
+        public List<Playlist> ListarTodos()
+    {
+        return contexto.Playlists.ToList();
+    }
 
-        public List<Playlist> ObterTodos()
-        {
-            return new List<Playlist>(playlists);
-        }
+       public Playlist ListarPorId(int id)
+    {
+        Playlist? playlist = null;
+        playlist = contexto.Playlists.FirstOrDefault(
+            playlist => playlist.Id == id
+        );
+        return playlist;
+    }
 
-        public Playlist ObterPorId(int id)
-        {
-            return playlists.FirstOrDefault(p => p.Id == id);
-        }
+        public void Atualizar(Playlist playlist)
+    {
+        contexto.Playlists.Update(playlist);
+        contexto.SaveChanges();
+    }
 
-        public bool Atualizar(Playlist playlist)
-        {
-            if (playlist == null) return false;
-            var existing = ObterPorId(playlist.Id);
-            if (existing == null) return false;
-
-            existing.Nome = playlist.Nome;
-            existing.DataCriacao = playlist.DataCriacao;
-            existing.NumeroMusicas = playlist.NumeroMusicas;
-            existing.Usuario = playlist.Usuario;
-            existing.Musicas = playlist.Musicas;
-
-            return true;
-        }
-
-        public bool Remover(int id)
-        {
-            var playlist = ObterPorId(id);
-            if (playlist == null) return false;
-            playlists.Remove(playlist);
-            return true;
-        }
+        public void Excluir(Playlist playlist)
+    {
+        contexto.Playlists.Remove(playlist);
+        contexto.SaveChanges();
+    }
     }
 }

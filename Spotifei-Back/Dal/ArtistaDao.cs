@@ -8,44 +8,38 @@ namespace Spotifai_Back.DAL
 {
     public class ArtistaDAO
     {
-        private static List<Artista> artistas = new List<Artista>();
-        private static int nextId = 1;
+        private SpotifeiContext contexto = new SpotifeiContext();
 
-        public void Adicionar(Artista artista)
-        {
-            if (artista == null) throw new ArgumentNullException(nameof(artista));
-            artista.Id = nextId++;
-            artistas.Add(artista);
-        }
+         public void Cadastrar(Artista objeto)
+    {
+        contexto.Artistas.Add(objeto);
+        contexto.SaveChanges();
+    }
 
-        public List<Artista> ObterTodos()
-        {
-            return new List<Artista>(artistas);
-        }
+      public List<Artista> ListarTodos()
+    {
+        return contexto.Artistas.ToList();
+    }
 
-        public Artista ObterPorId(int id)
-        {
-            return artistas.FirstOrDefault(a => a.Id == id);
-        }
+        public Artista ListarPorId(int id)
+    {
+        Artista? artista = null;
+        artista = contexto.Artistas.FirstOrDefault(
+            artista => artista.Id == id
+        );
+        return feedback;
+    }
 
-        public bool Atualizar(Artista artista)
-        {
-            if (artista == null) return false;
-            var existing = ObterPorId(artista.Id);
-            if (existing == null) return false;
+        public void Atualizar(Artista objeto)
+    {
+        contexto.Artistas.Update(objeto);
+        contexto.SaveChanges();
+    }
 
-            existing.Nome = artista.Nome;
-            existing.DataCriacao = artista.DataCriacao;
-
-            return true;
-        }
-
-        public bool Remover(int id)
-        {
-            var artista = ObterPorId(id);
-            if (artista == null) return false;
-            artistas.Remove(artista);
-            return true;
-        }
+        public void Excluir(Artista objeto)
+    {
+        contexto.Artistas.Remove(objeto);
+        contexto.SaveChanges();
+    }
     }
 }

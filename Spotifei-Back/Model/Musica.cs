@@ -8,6 +8,6 @@ public class Musica
 public int Id { get; set; }
     public string Descricao { get; set; }
     public DateTime DataPublicacao { get; set; }
-    public Usuario Usuario { get; set; }
-    public int UsuarioId { get; set; }
+    public Playlist Playlist { get; set; }
+    public int PlaylistId { get; set; }
 }

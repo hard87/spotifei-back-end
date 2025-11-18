@@ -5,6 +5,6 @@ class Playlist
     public DateTime DataCriacao { get; set; }
     public int NumeroMusicas { get; set; }
     public Usuario Usuario { get; set; }
-    
-    public List<Musica> Musicas { get; set; } = new List<Musica>(); 
+    public int UsuarioId { get; set; }
+    public List<Musica> Musicas { get; set; } 
 }

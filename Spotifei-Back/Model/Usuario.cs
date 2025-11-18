@@ -1,4 +1,4 @@
-public class Usuario
+public abstract class Usuario
 {
     public int Id { get; set; }
 
@@ -9,8 +9,10 @@ public class Usuario
     public string Senha { get; set; }
 
     public int Status { get; set; }
+
     public string? Foto { get; set; }
-    public List<Postagem> Postagens { get; set; }
+    public list<Playlist> Playlists;
+
     public abstract void ReproduzirMusica();
 
     public abstract void CurtirMusica();
