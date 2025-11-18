@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Spotifai_Back.DAL
 {
-    public class AlbumDAO
+    public class AlbumDAO : IDAO<Album>
      {
         private SpotifeiContext contexto = new SpotifeiContext();
 

@@ -24,6 +24,6 @@ class PlaylistController : IController<Playlist>
 
     public void Remover(Playlist objeto)
     {
-        // playlistDAO.Remover(objeto);
+        playlistDAO.Remover(objeto);
     }
 }

@@ -3,7 +3,7 @@ using Spotifai_Back.DAL;
 class OuvinteController : IController<Ouvinte>
 {
     OuvinteDAO ouvinteDAO = new OuvinteDAO();
-     public Ouvinte? ListarPorId(int id)
+     public Ouvinte? ObterPorId(int id)
     {
         Ouvinte ouvinte = dao.ListarPorId(id);
 
@@ -17,23 +17,23 @@ class OuvinteController : IController<Ouvinte>
         }
     }
 
-     public void CadastrarOuvinte(Ouvinte ouvinte)
+     public void Adicionar(Ouvinte ouvinte)
     {
         dao.Cadastrar(ouvinte);
     }
 
-    public void ExcluirOuvinte(Ouvinte ouvinte)
+    public void Remover(Ouvinte ouvinte)
     {
         dao.Excluir(ouvinte);
     }
 
-    public void AtualizarOuvinte(Ouvinte ouvinte)
+    public void Editar(Ouvinte ouvinte)
     {
        
         dao.Atualizar(ouvinte);
     }
 
-    public List<Ouvinte> ListarOuvintes()
+    public List<Ouvinte> ListarTodos()
     {
         // return new OuvinteDAO().ListarTodos();
         return dao.ListarTodos();

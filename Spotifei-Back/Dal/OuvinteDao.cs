@@ -7,7 +7,7 @@ using Spotifai_Back.DAL;
 
 namespace Spotifai_Back.DAL
 {
-    public class OuvinteDAO
+    public class OuvinteDAO : IDAO<Ouvinte>
     {
       private SpotifeiContext contexto = new SpotifeiContext();
 

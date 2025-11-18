@@ -15,24 +15,24 @@ class MusicaController //: iController<Musica>
             return null;
         }
     }
-      public void PostarMusica(Musica musica)
+      public void Adicionar(Musica musica)
     {
         
         dao.Cadastrar(musica);
     }
 
-    public void ExcluirMusica(Musica musica)
+    public void Remover(Musica musica)
     {
         dao.Excluir(musica);
     }
 
-    public void AtualizarMusica(Musica musica)
+    public void Editar(Musica musica)
     { 
         dao.Atualizar(Musica);
     }
 
 
-   public List<Musica> ListarMusicas()
+   public List<Musica> ListarTodos()
     {
         return new MusicaDAO().ListarTodos();
     }

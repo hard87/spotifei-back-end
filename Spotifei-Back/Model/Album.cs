@@ -1,4 +1,4 @@
-class Album : Playlist
+public class Album : Playlist
 {
     
 }

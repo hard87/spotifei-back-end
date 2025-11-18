@@ -1,0 +1,6 @@
+D:\Suzana\Desktop\VINICIUS\workplace2\spotifei-back2\spotifei-back-end\Spotifei-Back\obj\Debug\net8.0\Spotifei-Back.csproj.AssemblyReference.cache
+D:\Suzana\Desktop\VINICIUS\workplace2\spotifei-back2\spotifei-back-end\Spotifei-Back\obj\Debug\net8.0\Spotifei-Back.GeneratedMSBuildEditorConfig.editorconfig
+D:\Suzana\Desktop\VINICIUS\workplace2\spotifei-back2\spotifei-back-end\Spotifei-Back\obj\Debug\net8.0\Spotifei-Back.AssemblyInfoInputs.cache
+D:\Suzana\Desktop\VINICIUS\workplace2\spotifei-back2\spotifei-back-end\Spotifei-Back\obj\Debug\net8.0\Spotifei-Back.AssemblyInfo.cs
+D:\Suzana\Desktop\VINICIUS\workplace2\spotifei-back2\spotifei-back-end\Spotifei-Back\obj\Debug\net8.0\Spotifei-Back.csproj.CoreCompileInputs.cache
+D:\Suzana\Desktop\VINICIUS\workplace2\spotifei-back2\spotifei-back-end\Spotifei-Back\obj\Debug\net8.0\Spotifei-Back.sourcelink.json

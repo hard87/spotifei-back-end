@@ -25,6 +25,6 @@ class ArtistaController : IController<Artista>
 
     public void Remover(Artista objeto)
     {
-        // artistaDAO.Remover(objeto);
+        artistaDAO.Remover(objeto);
     }
 }

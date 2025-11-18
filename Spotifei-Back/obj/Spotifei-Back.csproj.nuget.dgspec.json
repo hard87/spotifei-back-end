@@ -1,32 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\workplace02\\Spotifei-back2\\spotifei-back-end\\Spotifei-Back\\Spotifei-Back.csproj": {}
+    "D:\\Suzana\\Desktop\\VINICIUS\\workplace2\\spotifei-back2\\spotifei-back-end\\Spotifei-Back\\Spotifei-Back.csproj": {}
   },
   "projects": {
-    "C:\\workplace02\\Spotifei-back2\\spotifei-back-end\\Spotifei-Back\\Spotifei-Back.csproj": {
+    "D:\\Suzana\\Desktop\\VINICIUS\\workplace2\\spotifei-back2\\spotifei-back-end\\Spotifei-Back\\Spotifei-Back.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workplace02\\Spotifei-back2\\spotifei-back-end\\Spotifei-Back\\Spotifei-Back.csproj",
+        "projectUniqueName": "D:\\Suzana\\Desktop\\VINICIUS\\workplace2\\spotifei-back2\\spotifei-back-end\\Spotifei-Back\\Spotifei-Back.csproj",
         "projectName": "Spotifei-Back",
-        "projectPath": "C:\\workplace02\\Spotifei-back2\\spotifei-back-end\\Spotifei-Back\\Spotifei-Back.csproj",
-        "packagesPath": "C:\\Users\\Prog_Sis\\.nuget\\packages\\",
-        "outputPath": "C:\\workplace02\\Spotifei-back2\\spotifei-back-end\\Spotifei-Back\\obj\\",
+        "projectPath": "D:\\Suzana\\Desktop\\VINICIUS\\workplace2\\spotifei-back2\\spotifei-back-end\\Spotifei-Back\\Spotifei-Back.csproj",
+        "packagesPath": "C:\\Users\\Suzana\\.nuget\\packages\\",
+        "outputPath": "D:\\Suzana\\Desktop\\VINICIUS\\workplace2\\spotifei-back2\\spotifei-back-end\\Spotifei-Back\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Prog_Sis\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Suzana\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net9.0"
+          "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -39,12 +37,23 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Pomelo.EntityFrameWorkCore.MySql": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -61,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.416/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

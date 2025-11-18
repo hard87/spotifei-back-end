@@ -13,7 +13,7 @@ class AlbumController : IController<Album>
 
     public void Remover(Album objeto)
     {
-        // albumDAO.Remover(objeto);
+        albumDAO.Remover(objeto);
     }
 
     public void Editar(Album objeto)
