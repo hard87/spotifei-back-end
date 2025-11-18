@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Suzana\\Desktop\\VINICIUS\\workplace2\\spotifei-back2\\spotifei-back-end\\Spotifei-Back\\Spotifei-Back.csproj": {}
+    "C:\\workplace\\Spotifei\\spotifei-back-end\\Spotifei-Back\\Spotifei-Back.csproj": {}
   },
   "projects": {
-    "D:\\Suzana\\Desktop\\VINICIUS\\workplace2\\spotifei-back2\\spotifei-back-end\\Spotifei-Back\\Spotifei-Back.csproj": {
+    "C:\\workplace\\Spotifei\\spotifei-back-end\\Spotifei-Back\\Spotifei-Back.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Suzana\\Desktop\\VINICIUS\\workplace2\\spotifei-back2\\spotifei-back-end\\Spotifei-Back\\Spotifei-Back.csproj",
+        "projectUniqueName": "C:\\workplace\\Spotifei\\spotifei-back-end\\Spotifei-Back\\Spotifei-Back.csproj",
         "projectName": "Spotifei-Back",
-        "projectPath": "D:\\Suzana\\Desktop\\VINICIUS\\workplace2\\spotifei-back2\\spotifei-back-end\\Spotifei-Back\\Spotifei-Back.csproj",
-        "packagesPath": "C:\\Users\\Suzana\\.nuget\\packages\\",
-        "outputPath": "D:\\Suzana\\Desktop\\VINICIUS\\workplace2\\spotifei-back2\\spotifei-back-end\\Spotifei-Back\\obj\\",
+        "projectPath": "C:\\workplace\\Spotifei\\spotifei-back-end\\Spotifei-Back\\Spotifei-Back.csproj",
+        "packagesPath": "C:\\Users\\Prog_Sis\\.nuget\\packages\\",
+        "outputPath": "C:\\workplace\\Spotifei\\spotifei-back-end\\Spotifei-Back\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Suzana\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Prog_Sis\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -43,11 +43,19 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.10, )"
             },
             "Pomelo.EntityFrameWorkCore.MySql": {
               "target": "Package",
@@ -70,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.416/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.415/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

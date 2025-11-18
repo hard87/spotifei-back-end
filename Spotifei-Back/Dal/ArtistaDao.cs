@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Spotifai_Back.DAL
 {
-    public class ArtistaDAO : IDAO<Artista>
+    public class ArtistaDAO : IDAO <Artista>
     {
         private SpotifeiContext contexto = new SpotifeiContext();
 
@@ -27,7 +27,7 @@ namespace Spotifai_Back.DAL
         artista = contexto.Artistas.FirstOrDefault(
             artista => artista.Id == id
         );
-        return feedback;
+        return artista;
     }
 
         public void Atualizar(Artista objeto)

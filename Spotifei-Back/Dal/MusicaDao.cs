@@ -27,7 +27,7 @@ namespace Spotifai_Back.DAL
         musica = contexto.Musicas.FirstOrDefault(
             musica => musica.Id == id
         );
-        return feedback;
+        return musica;
     }
 
         public void Atualizar(Musica objeto)

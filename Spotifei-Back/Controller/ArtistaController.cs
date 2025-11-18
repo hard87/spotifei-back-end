@@ -1,11 +1,11 @@
 using Spotifai_Back.DAL;
-class ArtistaController : IController<Artista>
+class ArtistaController : IController <Artista>
 {
     ArtistaDAO artistaDAO = new ArtistaDAO();
 
     public void Adicionar(Artista objeto)
     {
-        artistaDAO.Adicionar(objeto);
+        artistaDAO.Cadastrar(objeto);
     }
 
     public void Editar(Artista objeto)
@@ -15,16 +15,16 @@ class ArtistaController : IController<Artista>
 
     public List<Artista> ListarTodos()
     {
-        return artistaDAO.ObterTodos();
+        return artistaDAO.ListarTodos();
     }
 
     public Artista ObterPorId(int id)
     {
-        return artistaDAO.ObterPorId(id);
+        return artistaDAO.ListarPorId(id);
     }
 
     public void Remover(Artista objeto)
     {
-        artistaDAO.Remover(objeto);
+        artistaDAO.Excluir(objeto);
     }
 }

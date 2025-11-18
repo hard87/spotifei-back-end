@@ -12,7 +12,7 @@ public abstract class Usuario
     public int Status { get; set; }
 
     public string? Foto { get; set; }
-    public list<Playlist> Playlists { get; set; }
+    public List<Playlist> Playlists { get; set; }
 
     public abstract void ReproduzirMusica();
 

@@ -4,7 +4,7 @@ class MusicaController //: iController<Musica>
  private MusicaDAO musicaDAO = new MusicaDAO();
     public Musica? ListarPorId(int id)
     {
-        Musica musica = dao.ListarPorId(id);
+        Musica musica = musicaDAO.ListarPorId(id);
 
         if (musica != null)
         {
@@ -18,17 +18,17 @@ class MusicaController //: iController<Musica>
       public void Adicionar(Musica musica)
     {
         
-        dao.Cadastrar(musica);
+        musicaDAO.Cadastrar(musica);
     }
 
     public void Remover(Musica musica)
     {
-        dao.Excluir(musica);
+        musicaDAO.Excluir(musica);
     }
 
     public void Editar(Musica musica)
     { 
-        dao.Atualizar(Musica);
+        musicaDAO.Atualizar(musica);
     }
 
 

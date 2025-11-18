@@ -4,9 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Spotifai_Back.DAL
-{
-    public class AlbumDAO : IDAO<Album>
+    public class AlbumDAO : IDAO <Album>
      {
         private SpotifeiContext contexto = new SpotifeiContext();
 
@@ -27,7 +25,7 @@ namespace Spotifai_Back.DAL
         album = contexto.Albuns.FirstOrDefault(
             album => album.Id == id
         );
-        return feedback;
+        return album;
     }
 
         public void Atualizar(Album objeto)
@@ -42,4 +40,3 @@ namespace Spotifai_Back.DAL
         contexto.SaveChanges();
     }
     }
-}

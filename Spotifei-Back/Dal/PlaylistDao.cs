@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Spotifai_Back.DAL
 {
-    public class PlaylistDAO : IDAO<Playlist>
+    public class PlaylistDAO : IDAO <Playlist>
     {
        private SpotifeiContext contexto = new SpotifeiContext();
         public void Cadastrar(Playlist playlist)

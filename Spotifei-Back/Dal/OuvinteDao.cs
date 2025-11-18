@@ -5,8 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Spotifai_Back.DAL;
 
-namespace Spotifai_Back.DAL
-{
+
     public class OuvinteDAO : IDAO<Ouvinte>
     {
       private SpotifeiContext contexto = new SpotifeiContext();
@@ -42,4 +41,4 @@ namespace Spotifai_Back.DAL
         contexto.SaveChanges();
     }
     }
-}
+

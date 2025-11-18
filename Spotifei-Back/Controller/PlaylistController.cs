@@ -4,7 +4,7 @@ class PlaylistController : IController<Playlist>
     PlaylistDAO playlistDAO = new PlaylistDAO();
     public void Adicionar(Playlist objeto)
     {
-        playlistDAO.Adicionar(objeto);
+        playlistDAO.Cadastrar(objeto);
     }
 
     public void Editar(Playlist objeto)
@@ -14,16 +14,16 @@ class PlaylistController : IController<Playlist>
 
     public List<Playlist> ListarTodos()
     {
-        return playlistDAO.ObterTodos();
+        return playlistDAO.ListarTodos();
     }
 
     public Playlist ObterPorId(int id)
     {
-        return playlistDAO.ObterPorId(id);
+        return playlistDAO.ListarPorId(id);
     }
 
     public void Remover(Playlist objeto)
     {
-        playlistDAO.Remover(objeto);
+        playlistDAO.Excluir(objeto);
     }
 }
