@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spotifei-Back", "Spotifei-Back\Spotifei-Back.csproj", "{A4DA5288-783E-40EA-9537-F84436AC5915}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spotifei.API", "Spotifei.API\Spotifei.API.csproj", "{B60C6085-47D2-46A8-AB65-1A93AA443366}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,18 @@ Global
 		{A4DA5288-783E-40EA-9537-F84436AC5915}.Release|x64.Build.0 = Release|Any CPU
 		{A4DA5288-783E-40EA-9537-F84436AC5915}.Release|x86.ActiveCfg = Release|Any CPU
 		{A4DA5288-783E-40EA-9537-F84436AC5915}.Release|x86.Build.0 = Release|Any CPU
+		{B60C6085-47D2-46A8-AB65-1A93AA443366}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B60C6085-47D2-46A8-AB65-1A93AA443366}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B60C6085-47D2-46A8-AB65-1A93AA443366}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B60C6085-47D2-46A8-AB65-1A93AA443366}.Debug|x64.Build.0 = Debug|Any CPU
+		{B60C6085-47D2-46A8-AB65-1A93AA443366}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B60C6085-47D2-46A8-AB65-1A93AA443366}.Debug|x86.Build.0 = Debug|Any CPU
+		{B60C6085-47D2-46A8-AB65-1A93AA443366}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B60C6085-47D2-46A8-AB65-1A93AA443366}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B60C6085-47D2-46A8-AB65-1A93AA443366}.Release|x64.ActiveCfg = Release|Any CPU
+		{B60C6085-47D2-46A8-AB65-1A93AA443366}.Release|x64.Build.0 = Release|Any CPU
+		{B60C6085-47D2-46A8-AB65-1A93AA443366}.Release|x86.ActiveCfg = Release|Any CPU
+		{B60C6085-47D2-46A8-AB65-1A93AA443366}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
