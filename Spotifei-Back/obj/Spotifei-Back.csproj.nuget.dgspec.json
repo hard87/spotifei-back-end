@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\workplace02\\Spotifei-back2\\spotifei-back-end\\Spotifei-Back\\Spotifei-Back.csproj": {}
+    "C:\\Users\\Say\\Desktop\\spotifeiantigo\\Spotifei-Back\\Spotifei-Back.csproj": {}
   },
   "projects": {
-    "C:\\workplace02\\Spotifei-back2\\spotifei-back-end\\Spotifei-Back\\Spotifei-Back.csproj": {
+    "C:\\Users\\Say\\Desktop\\spotifeiantigo\\Spotifei-Back\\Spotifei-Back.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workplace02\\Spotifei-back2\\spotifei-back-end\\Spotifei-Back\\Spotifei-Back.csproj",
+        "projectUniqueName": "C:\\Users\\Say\\Desktop\\spotifeiantigo\\Spotifei-Back\\Spotifei-Back.csproj",
         "projectName": "Spotifei-Back",
-        "projectPath": "C:\\workplace02\\Spotifei-back2\\spotifei-back-end\\Spotifei-Back\\Spotifei-Back.csproj",
-        "packagesPath": "C:\\Users\\Prog_Sis\\.nuget\\packages\\",
-        "outputPath": "C:\\workplace02\\Spotifei-back2\\spotifei-back-end\\Spotifei-Back\\obj\\",
+        "projectPath": "C:\\Users\\Say\\Desktop\\spotifeiantigo\\Spotifei-Back\\Spotifei-Back.csproj",
+        "packagesPath": "C:\\Users\\Say\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Say\\Desktop\\spotifeiantigo\\Spotifei-Back\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Prog_Sis\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Say\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,11 +38,17 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -61,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

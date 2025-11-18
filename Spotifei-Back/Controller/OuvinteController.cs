@@ -1,6 +1,7 @@
 using System.Diagnostics.Contracts;
 using Spotifai_Back.DAL;
-class OuvinteController : IController<Ouvinte>
+using Spotifei_Back.DAL;
+class OuvinteController 
 {
     OuvinteDAO ouvinteDAO = new OuvinteDAO();
      public Ouvinte? ListarPorId(int id)

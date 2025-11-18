@@ -28,7 +28,7 @@ class MusicaController //: iController<Musica>
 
     public void AtualizarMusica(Musica musica)
     { 
-        dao.Atualizar(Musica);
+        dao.Atualizar(musica);
     }
 
 

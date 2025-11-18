@@ -1,4 +1,4 @@
-public class Musica
+public class Musica : Postagem
 {
    /*  public int Id { get; set; }
     public string Nome{ get; set; }
