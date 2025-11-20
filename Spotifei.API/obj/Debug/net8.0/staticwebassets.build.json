@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "Z/VubFyzYOWxhOdsb4JJAfn7Zsh5vrPmTfIo93RcYX0=",
+  "Hash": "KsnuWU98g+20NhMD3w7wUucM1jYrUca+ROb4abWAP5g=",
   "Source": "Spotifei.API",
   "BasePath": "_content/Spotifei.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

@@ -4813,19 +4813,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Prog_Sis\\.nuget\\packages\\": {}
+    "C:\\Users\\Say\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\workplace\\Spotifei\\spotifei-back-end\\Spotifei-Back\\Spotifei-Back.csproj",
+      "projectUniqueName": "C:\\Users\\Say\\Desktop\\spotifeiantigo\\spotifei-back-end\\Spotifei-Back\\Spotifei-Back.csproj",
       "projectName": "Spotifei-Back",
-      "projectPath": "C:\\workplace\\Spotifei\\spotifei-back-end\\Spotifei-Back\\Spotifei-Back.csproj",
-      "packagesPath": "C:\\Users\\Prog_Sis\\.nuget\\packages\\",
-      "outputPath": "C:\\workplace\\Spotifei\\spotifei-back-end\\Spotifei-Back\\obj\\",
+      "projectPath": "C:\\Users\\Say\\Desktop\\spotifeiantigo\\spotifei-back-end\\Spotifei-Back\\Spotifei-Back.csproj",
+      "packagesPath": "C:\\Users\\Say\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Say\\Desktop\\spotifeiantigo\\spotifei-back-end\\Spotifei-Back\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Prog_Sis\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Say\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -4848,7 +4848,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -4884,12 +4885,30 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.14, 8.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[8.0.14, 8.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.14, 8.0.14]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.14, 8.0.14]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.415/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
