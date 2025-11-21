@@ -1,5 +1,13 @@
 using Microsoft.AspNetCore.Mvc; //Possivelmente instalar depois o pacote
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        policy => policy.AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader());
+});
+
 var app = builder.Build();
 
 var musicaGroup = app.MapGroup("/musicas");
@@ -102,5 +110,13 @@ artistaGroup.MapDelete("", ([FromBody] Artista artista) =>
 // usuarioGroup.MapDelete("", ([FromBody]) => 
 // {});
 
+//var builder = WebApplication.CreateBuilder(args);
 
+
+//var app = builder.Build();
+
+app.UseCors("AllowAll");
+
+
+app.MapGet("/", () => "API Spotifei rodando!");
 app.Run();

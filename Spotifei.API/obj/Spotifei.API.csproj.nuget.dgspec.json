@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Say\\Desktop\\spotifeiantigo\\spotifei-back-end\\Spotifei.API\\Spotifei.API.csproj": {}
+    "C:\\Users\\Say\\Desktop\\spotifeiantigo\\spotifei-back-end\\spotifei.api\\Spotifei.API.csproj": {}
   },
   "projects": {
     "C:\\Users\\Say\\Desktop\\spotifeiantigo\\spotifei-back-end\\Spotifei-Back\\Spotifei-Back.csproj": {
@@ -46,19 +46,19 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[9.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[9.0.8, )"
             },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
+            "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
-              "version": "[8.0.10, )"
+              "version": "[9.0.8, )"
             },
-            "Pomelo.EntityFrameWorkCore.MySql": {
+            "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[9.0.0, )"
             }
@@ -101,14 +101,14 @@
         }
       }
     },
-    "C:\\Users\\Say\\Desktop\\spotifeiantigo\\spotifei-back-end\\Spotifei.API\\Spotifei.API.csproj": {
+    "C:\\Users\\Say\\Desktop\\spotifeiantigo\\spotifei-back-end\\spotifei.api\\Spotifei.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Say\\Desktop\\spotifeiantigo\\spotifei-back-end\\Spotifei.API\\Spotifei.API.csproj",
+        "projectUniqueName": "C:\\Users\\Say\\Desktop\\spotifeiantigo\\spotifei-back-end\\spotifei.api\\Spotifei.API.csproj",
         "projectName": "Spotifei.API",
-        "projectPath": "C:\\Users\\Say\\Desktop\\spotifeiantigo\\spotifei-back-end\\Spotifei.API\\Spotifei.API.csproj",
+        "projectPath": "C:\\Users\\Say\\Desktop\\spotifeiantigo\\spotifei-back-end\\spotifei.api\\Spotifei.API.csproj",
         "packagesPath": "C:\\Users\\Say\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Say\\Desktop\\spotifeiantigo\\spotifei-back-end\\Spotifei.API\\obj\\",
+        "outputPath": "C:\\Users\\Say\\Desktop\\spotifeiantigo\\spotifei-back-end\\spotifei.api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Say\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -146,6 +146,12 @@
           "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.0, )"
             },
